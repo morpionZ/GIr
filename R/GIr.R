@@ -13,13 +13,26 @@ myIP <- function() {
 }
 
 getIMGs <- function(keywords, number = 5, WRITE = TRUE, RETURN = FALSE, imgtype = "all") {
-  # Uses jsonip.com to retrieve computer's public IP address.
+  # Retrieve and save pictures from a Google Images search.
   #
   # Args:
-  #   No arguments. 
+  #   keywords: A vector containing the keywords for the Google Images search.
+  #   number: The number of results to return (default: 5). 
+  #   WRITE: Logical. Should the function save pictures to hard drive (default: 
+  #     TRUE). If TRUE, the pictures will be saved in the working directory in a 
+  #     folder named after the provided keywords.
+  #   RETURN: Logical. Should the function return a list of the images (default: 
+  #     FALSE). Users should use this argument carefully, especially if they 
+  #     request a large number of images, to avoid running out of memory. 
+  #   imgtype: A character string indicating the type of images returned by the 
+  #     Google Images search (default: "all"). Possible values are "all" (all 
+  #     types of picture), "photo" (only photographs), "face" (only pictures 
+  #     containing faces), "clipart" (only cliparts) and "lineart" (only line 
+  #     art).
   #
   # Returns:
-  #   A character string containing the computer's public IP address. 
+  #   If RETURN is TRUE, a list of objects of EBImage class Image. If TRUE, the 
+  #   function does not return anything
   
   ## Verifications
   if (!is.vector(keywords)) {
