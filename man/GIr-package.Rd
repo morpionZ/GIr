@@ -2,12 +2,12 @@
 \alias{GIr-package}
 \alias{GIr}
 \docType{package}
-\title{Get images from Google Images}
+\title{Package overview}
 \description{
-This package contains functions to search and retrieve pictures 
-  from Google Images based on keywords provided by the user. The images are 
-  automatically can be downloaded to the computer and stored in a folder in the 
-  working directory for later use.
+This package contains functions to search and retrieve pictures from Google 
+Images based on keywords provided by the user. The images are automatically can 
+be downloaded to the computer and stored in a folder in the working directory 
+for later use.
 }
 \details{
 \tabular{ll}{
@@ -24,7 +24,8 @@ Simon Garnier <garnier@njit.edu>
 Maintainer: Simon Garnier <garnier@njit.edu>
 }
 \references{
-This package uses Google Images (deprecated) JSON API. More information about the API at: \url{https://developers.google.com/image-search/v1/jsondevguide}
+This package uses Google Images (deprecated) JSON API. More information about 
+the API at: \url{https://developers.google.com/image-search/v1/jsondevguide}.
 }
 \examples{
 require("EBImage")

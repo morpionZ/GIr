@@ -31,7 +31,7 @@ getIMGs <- function(keywords, number = 5, WRITE = TRUE, RETURN = FALSE, imgtype 
   #     art).
   #
   # Returns:
-  #   If RETURN is TRUE, a list of objects of EBImage class Image. If TRUE, the 
+  #   If RETURN is TRUE, a list of objects of EBImage class Image. If FALSE, the 
   #   function does not return anything
   
   ## Verifications
