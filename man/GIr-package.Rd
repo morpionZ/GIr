@@ -2,39 +2,36 @@
 \alias{GIr-package}
 \alias{GIr}
 \docType{package}
-\title{
-What the package does (short line)
-~~ package title ~~
-}
+\title{Get images from Google Images}
 \description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
+This package contains functions to search and retrieve pictures 
+  from Google Images based on keywords provided by the user. The images are 
+  automatically can be downloaded to the computer and stored in a folder in the 
+  working directory for later use.
 }
 \details{
 \tabular{ll}{
 Package: \tab GIr\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
+Version: \tab 0.1\cr
 Date: \tab 2014-02-13\cr
-License: \tab What license is it under?\cr
+License: \tab GPL-2\cr
 }
-~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
-Who wrote it
+Simon Garnier <garnier@njit.edu>
 
-Maintainer: Who to complain to <yourfault@somewhere.net>
-~~ The author and/or maintainer of the package ~~
+Maintainer: Simon Garnier <garnier@njit.edu>
 }
 \references{
-~~ Literature or other references for background information ~~
-}
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R documentation directory ~~
-\keyword{ package }
-\seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+This package uses Google Images (deprecated) JSON API. More information about the API at: \url{https://developers.google.com/image-search/v1/jsondevguide}
 }
 \examples{
-~~ simple examples of the most important functions ~~
+require("EBImage")
+imgs <- getIMGs(keywords = c("R", "is", "fantastic"),
+                number = 5,
+                WRITE = FALSE,
+                RETURN = TRUE,
+                imgtype = "all")
+display(imgs[[1]])
 }

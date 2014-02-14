@@ -80,7 +80,7 @@ getIMGs <- function(keywords, number = 5, WRITE = TRUE, RETURN = FALSE, imgtype 
                          "&start=", start,
                          "&rsz=", 8,
                          "&userip=", IP,
-                         "&imgtype=", "photo")
+                         "&imgtype=", imgtype)
     raw.json <- getURL(search.url)
     parsed.json <- fromJSON(raw.json)
     img.url <- parsed.json$responseData$results$unescapedUrl
