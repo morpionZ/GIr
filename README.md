@@ -10,7 +10,6 @@ This package contains functions to search and retrieve pictures from Google Imag
 
 #### Installation
 In R, run:
-
 ```R
 install.packages("devtools")
 
